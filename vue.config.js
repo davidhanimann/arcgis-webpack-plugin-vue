@@ -32,17 +32,13 @@ module.exports = {
         },
         plugins: [
           new ArcGISPlugin({
-              features: {
-                  has: {
-                      // enable native promise in ArcGIS API for JavaScript
-                      'esri-native-promise': true,
-                  }
-              },
             useDefaultAssetLoaders: true
           }),
            ],
           node: {
-            global: false,
+              process: false,
+              global: false,
+              fs: "empty"
           },
           optimization: {
             minimize: false,
