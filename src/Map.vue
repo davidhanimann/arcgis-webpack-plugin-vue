@@ -4,7 +4,7 @@
 <script>
 import Map from "esri/Map";
 import MapView from 'esri/views/MapView';
-import geometryJsonUtils from 'esri/geometry/support/jsonUtils'
+import * as geometryJsonUtils from 'esri/geometry/support/jsonUtils'
 import geometryEngine from 'esri/geometry/geometryEngine';
 
 export default {
